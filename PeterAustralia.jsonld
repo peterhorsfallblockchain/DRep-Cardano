@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "PeterAustralia",
+    "motivations": "As an active community member since 2018, I'm passionate about leveraging my background in law, technology, and traditional finance to drive positive change in the financial sector.\n\nI believe that DReps offer a unique opportunity to connect the unconnected and provide financial services to the unbanked. My experience in banking, legal services and technology applications, positions me well to contribute to the development and growth of this emerging technology",
+    "objectives": "I firmly believe in Cardano's potential to revolutionise the financial landscape. As a DRep, I'm dedicated to using my resources and network to make informed decisions that prioritise the long-term health and growth of the ecosystem.\n\nCardano's decentralised governance model empowers every stakeholder. I'm committed to ensuring that my votes align with the best interests of the community and contribute to a more equitable, transparent, and sustainable financial future",
+    "paymentAddress": "addr1q95npx6h4vjd5y7grjflfwaftg8wsqtaj92jvp98tk53kdxt53xe4qczd7fj7g0w2qntfa5h4ekpd4dcq9vm2zawjpeqq2nvfc",
+    "qualifications": "",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "LinkedIN",
+        "uri": "https://www.linkedin.com/in/peterhorsfall/"
+      },
+      {
+        "@type": "Link",
+        "label": "X",
+        "uri": "https://x.com/blockchain_pete"
+      }
+    ]
+  }
+}
